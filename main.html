@@ -24,6 +24,7 @@
             word-spacing: 125px;
             font-size: x-large;
             color: rgb(112, 112, 112);
+
         }
 
         .footer {
@@ -32,6 +33,65 @@
             padding: 10px;
             border: 5px solid rgb(255, 255, 255);
             margin: 0;
+
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+            padding: 20px;
+            background-color: rgb(151, 0, 0);
+            margin: 300px;
+            color: white;
+        }
+
+        .products {
+            width: 910px;
+            height: 610px;
+            padding: 50px;
+            border: 1px solid rgb(151, 0, 0);
+            margin: auto;
+
+
+        }
+
+        .shopused {
+            width: 300px;
+            height: 300px;
+            background-color: rgb(151, 0, 0);
+            border: grey;
+            text-align: center;
+            margin: auto;
+        }
+
+        .shopnew {
+            width: 300px;
+            height: 300px;
+            background-color: rgb(151, 0, 0);
+            border: grey;
+            text-align: center;
+            margin: auto;
+        }
+
+        .concerts {
+            background-color: rgba(0, 0, 0, 0.411);
+            padding: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color: white;
+            margin: 690px;
+        }
+
+        .meetups {
+            background-color: rgba(0, 0, 0, 0.411);
+            padding: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color: white;
+            margin: 690px;
 
         }
     </style>
@@ -66,17 +126,32 @@
 
 
     <img src="Images/image_fip_08_cropped.jpg" alt="Setting" width="1500" height="660">
-    <a href="url">Shop Used</a>
-    <a href="url">Shop New</a>
+    <ul>
+        <div class="shopused">
+            <a href="url">Shop Used</a>
+        </div>
+        <div class="shopnew">
+            <a href="url">Shop New</a>
+        </div>
+    </ul>
     <img src="Images/image_fip_11_cropped.jpg" alt="Record black and white" width="1500" height="660">
     <h2>Join The Community</h2>
-    <a href="url"><img src="Images/image_concert_cropped.jpg" alt="Concerts" width="500" height="500"></a>
-    <a href="url"><img src="Images/image_headphones_cropped.jpg" alt="Meet Ups" width="500" height="500"></a>
-    <h3>Concerts</h3>
-    <h3>Meet Ups</h3>
+    <div class="communeimages">
+        <a href="url"><img src="Images/image_concert_cropped.jpg" alt="Concerts" width="500" height="500"></a>
+        <a href="url"><img src="Images/image_headphones_cropped.jpg" alt="Meet Ups" width="500" height="500"></a>
+    </div>
+
+    <div class="concerts">
+        <h3>Concerts</h3>
+    </div>
+    <div class="meetups">
+        <h3>Meet Ups</h3>
+    </div>
 
     <Footer>
+        <div class="bottomimage"></div>
         <img src="Images/image_logo.png" alt="Logo" width="380" height="215">
+        </div>
         <p class="footer">
             Address: 180 Shakedown Street East
             Phone: (519) 436-662-7190
