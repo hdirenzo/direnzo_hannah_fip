@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Charm&family=Cinzel&family=Rubik&display=swap"
         rel="stylesheet">
-    <title>Red Deer Records</title>
+    <title>Red Deer Records - Contact</title>
     <style>
         button {
             padding: 10px 24px;
@@ -32,12 +32,45 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
+            margin-bottom: 20px;
+            color: grey;
         }
 
         body {
             font-family: 'Charm', cursive;
             font-family: 'Cinzel', serif;
             font-family: 'Rubik', sans-serif;
+
+        }
+
+        .info {
+            text-align: left;
+            font-size: 30px;
+            padding: 20px;
+        }
+
+        .footertext {
+            text-align: right;
+            font-size: 18px;
+
+        }
+
+        .heroimage {
+            background-image: url(Images/image_fip_12_cropped_large.jpg);
+            color: white;
+            height: 600px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            padding: 70px;
+            font-size: 35px;
+
+        }
+
+        .heroimage h2 {
+            background-color: rgb(151, 0, 0);
+            border-color: rgba(151, 0, 0, 0.493);
+            padding: 30px;
+            margin-right: 985px;
 
         }
     </style>
@@ -52,8 +85,17 @@
         <a href="url">Contact</a>
     </nav>
 
-    <h2>Chat with Us</h2>
-    <img src="Images/image_fip_12_cropped_large.jpg" alt="looking" width="1500" height="550">
+
+    <section class="heroimage">
+        <h2>Chat with Us</h2>
+        <!-- <img src="Images/image_fip_12_cropped_large.jpg" alt="looking" width="1500" height="550"> -->
+    </section>
+
+    <div class="info">
+        Our Location : 180 Shakedown Street East<br>
+        Phone : (519) 436-662-7190<br>
+        Email : email@reddeerrecords.com
+    </div>
 
     <label for="name">Your Name:</label>
 
@@ -62,24 +104,29 @@
 
     <input type="text" id="phone" name="phone" required minlength="4" maxlength="10" size="35">
 
-    <label for="message">Your Message:</label></label>
+    <label for="message">Your Message:</label>
+    <textarea id="type" name="messages" rows="20" cols="200">
+Type here...
+</textarea>
 
-    <input type="text" id="message" name="message" required minlength="4" maxlength="250" size="300">
+
     <h4>Thank you for contacting us! (:</h4>
     <button type="button">Send</button>
 
     <img src="Images/image_keyboard_girl_cropped _large.jpg" alt="Keyboard Girl" width="1500" height="500">
     <Footer>
         <img src="Images/image_logo.png" alt="Logo" width="380" height="215">
-        <p>
-            Address: 180 Shakedown Street East
-            Phone: (519) 436-662-7190
-            Email: email@reddeerrecords.com
-            Hours:
-            Monday to Friday: 10am - 8pm
-            Saturday to Sunday: 10am - 5pm
-            <img src="Images/image_socialmedia.png" alt="Socials" width="275" height="95">
-        </p>
+        <div class="footertext">
+            <p>
+                Address: 180 Shakedown Street East<br>
+                Phone: (519) 436-662-7190<br>
+                Email: email@reddeerrecords.com<br>
+                Hours:
+                Monday to Friday: 10am - 8pm<br>
+                Saturday to Sunday: 10am - 5pm<br>
+                <img src="Images/image_socialmedia.png" alt="Socials" width="275" height="95">
+            </p>
+        </div>
 
     </Footer>
 
