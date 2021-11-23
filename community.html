@@ -22,6 +22,7 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
+            padding-bottom: 15px;
         }
 
         body {
@@ -39,7 +40,7 @@
 
         h4 {
             text-align: center;
-            font-size: 26px;
+            font-size: 30px;
             margin-top: 50px;
 
         }
@@ -47,6 +48,61 @@
         .soundcloud {
             margin-right: 200px;
             margin-left: 180px;
+        }
+
+        .joining h2 {
+            text-align: center;
+            padding: 20px;
+            background-color: rgb(151, 0, 0);
+            margin-right: 270px;
+            color: white;
+        }
+
+        .joining {
+            margin-left: 230px;
+
+        }
+
+        .socialmediaimage {
+            margin-left: 500px;
+        }
+
+        .comments {
+            display: flex;
+            flex-direction: row;
+            padding: 30px;
+            margin-left: 180px;
+            padding-bottom: 1px;
+        }
+
+        p.one {
+            font-size: 30px;
+            background-color: rgba(128, 128, 128, 0.445);
+            width: 300px;
+            height: 400px;
+            padding: 20px;
+            margin: 15px;
+
+        }
+
+        p.two {
+            font-size: 30px;
+            background-color: rgba(128, 128, 128, 0.445);
+            width: 300px;
+            height: 400px;
+            padding: 20px;
+            margin: 15px;
+        }
+
+        p.three {
+            font-size: 30px;
+            background-color: rgba(128, 128, 128, 0.445);
+            width: 300px;
+            height: 400px;
+            padding: 20px;
+            margin: 15px;
+
+
         }
     </Style>
 </head>
@@ -62,25 +118,34 @@
     </nav>
 
     <img src="Images/image_fip_09_cropped_large.jpg" alt="Nino and Brennan Again" width="1500" height="610">
+    <!-- join the community -->
+    <section class="joining">
+        <h2>Join The Community</h2>
+        <div class="communeimages">
 
-    <h2>Join The Community</h2>
-    <a href="url"><img src="Images/image_concert_cropped_medium.jpg" alt="Concerts" width="500" height="500"></a>
-    <a href="url"><img src="Images/image_headphones_cropped_medium.jpg" alt="Meet Ups" width="500" height="500"></a>
-    <h3>Concerts</h3>
-    <h3>Meet Ups</h3>
+            <a href="url"><img src="Images/image_concert_cropped_medium.jpg" alt="Concerts" width="500"
+                    height="500"></a>
+
+            <a href="url"><img src="Images/image_headphones_cropped_medium.jpg" alt="Meet Ups" width="500"
+                    height="500"></a>
+        </div>
+    </section>
 
     <h4>Follow Us On Social Media</h4>
-    <a href="url"><img src="Images/image_socialmedia.png" alt="Socials" width="500" height="180"></a>
-
-    <p>“The staff at Red Deer Records are so kind!
-        They have they best music recommendations!
-        I listen to my Chet Baker album every morning! So peaceful!”</p>
-    <p>“I bought a few used albums from Red Deer Records.
-        All the albums seemed brand new!
-        No scratches or dusk at all! 5 Stars!”</p>
-    <p>“I met so many new friends at the DJ workshop,
-        and I even won tickets to see Sam Roberts Band in London.
-        I definatly suggest checking this shop out!”</p>
+    <div class="socialmediaimage">
+        <a href="url"><img src="Images/image_socialmedia.png" alt="Socials" width="500" height="180"></a>
+    </div>
+    <div class="comments">
+        <p class="one">“The staff at Red Deer Records are so kind!
+            They have they best music recommendations!
+            I listen to my Chet Baker album every morning! So peaceful!”</p>
+        <p class="two">“I bought a few used albums from Red Deer Records.
+            All the albums seemed brand new!
+            No scratches or dust at all! 5 Stars!”</p>
+        <p class="three">“I met so many new friends at the DJ workshop,
+            and I even won tickets to see Sam Roberts Band in London.
+            I definatly suggest checking this shop out!”</p>
+    </div>
 
     <h4>Check Out Local Artists</h4>
     <div class="locals">
