@@ -34,7 +34,10 @@
             align-items: center;
             margin-bottom: 20px;
             color: grey;
+
         }
+
+
 
         body {
             font-family: 'Charm', cursive;
@@ -47,6 +50,7 @@
             text-align: left;
             font-size: 30px;
             padding: 20px;
+            margin-top: ;
         }
 
         .footertext {
@@ -58,7 +62,7 @@
         .heroimage {
             background-image: url(Images/image_fip_12_cropped_large.jpg);
             color: white;
-            height: 600px;
+            height: 500px;
             background-size: contain;
             background-repeat: no-repeat;
             padding: 70px;
@@ -72,6 +76,18 @@
             padding: 30px;
             margin-right: 985px;
 
+        }
+
+        .contactinputs {
+            display: flex;
+            flex-direction: column;
+            font-size: 20px;
+            margin: 20px;
+        }
+
+        .messages {
+            font-size: 20px;
+            margin: 20px;
         }
     </style>
 </head>
@@ -97,21 +113,28 @@
         Email : email@reddeerrecords.com
     </div>
 
-    <label for="name">Your Name:</label>
+    <div class="contactinputs">
 
-    <input type="text" id="name" name="name" required minlength="4" maxlength="30" size="35">
-    <label for="phone">Your Phone Number:</label>
+        <label for="name">Your Name:</label>
 
-    <input type="text" id="phone" name="phone" required minlength="4" maxlength="10" size="35">
+        <textarea rows="1" cols="20"></textarea>
+        <label for="phone">Your Phone Number:</label>
+        <textarea rows="1" cols="20">
 
-    <label for="message">Your Message:</label>
-    <textarea id="type" name="messages" rows="20" cols="200">
+        </textarea>
+
+
+    </div>
+    <div class="messages">
+        <label for="message">Your Message:</label>
+        <textarea id="type" name="messages" rows="20" cols="200">
 Type here...
 </textarea>
 
 
-    <h4>Thank you for contacting us! (:</h4>
-    <button type="button">Send</button>
+        <h4>Thank you for contacting us! (:</h4>
+        <button type="button">Send</button>
+    </div>
 
     <img src="Images/image_keyboard_girl_cropped _large.jpg" alt="Keyboard Girl" width="1500" height="500">
     <Footer>
@@ -129,6 +152,7 @@ Type here...
         </div>
 
     </Footer>
+
 
 
 </body>
