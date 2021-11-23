@@ -24,15 +24,17 @@
             word-spacing: 125px;
             font-size: x-large;
             color: rgb(112, 112, 112);
+            padding-bottom: 10px;
 
         }
 
         .footer {
             text-align: right;
             width: 320px;
-            padding: 10px;
+
             border: 5px solid rgb(255, 255, 255);
             margin: 0;
+
 
         }
 
@@ -40,13 +42,7 @@
             text-align: center;
         }
 
-        h2 {
-            text-align: center;
-            padding: 20px;
-            background-color: rgb(151, 0, 0);
-            margin: 300px;
-            color: white;
-        }
+
 
         .products {
             width: 910px;
@@ -54,7 +50,7 @@
             padding: 50px;
             border: 1px solid rgb(151, 0, 0);
             margin: auto;
-
+            margin-bottom: 75px;
 
         }
 
@@ -65,6 +61,7 @@
             border: grey;
             text-align: center;
             margin: auto;
+
         }
 
         .shopnew {
@@ -94,25 +91,59 @@
             margin: 690px;
 
         }
+
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .heroimage {
+            background-image: url(images/image_fip_01_cropped_large.jpg);
+            color: white;
+            height: 600px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            padding: 70px;
+            font-size: 35px;
+
+        }
+
+        .heroimage h2 {
+            color: rgb(151, 0, 0);
+        }
+
+        .joining h2 {
+            text-align: center;
+            padding: 20px;
+            background-color: rgb(151, 0, 0);
+            margin: 300px;
+            color: white;
+        }
+
+        .shoppingboxes {
+
+            flex-direction: row;
+        }
     </style>
 </head>
 
 <body>
-
-    <img src="Images/image_logo.png" alt="Logo" width="380" height="215">
-    <div class="nav">
+    <nav class="navbar nav">
+        <img src="Images/image_logo.png" alt="Logo" width="380" height="215">
         <a href="url">Home</a>
         <a href="url">Shop</a>
         <a href="url">Community</a>
         <a href="url">Contact</a>
-    </div>
+    </nav>
+    <section class="heroimage">
 
-
-    <img src="Images/image_fip_01_cropped.jpg" alt="Hero Image Josh" width="1500" height="690">
-    <h2>Buy New and Used Records!</h2>
-    <h4>Used recordsd starting at $5!
-        First time customers get 10% off thier first record
-    </h4>
+        <!-- <img src="Images/image_fip_01_cropped_large.jpg" alt="Hero Image Josh" width="1500" height="690"> -->
+        <h2>Buy New and Used Records!</h2>
+        <p>Used records starting at $5!
+            <br> First time customers get 10% <br>off their first record!
+        </p>
+    </section>
 
     <h1>SHOP BY GENRE</h1>
     <div class="products">
@@ -125,21 +156,27 @@
     </div>
 
 
-    <img src="Images/image_fip_08_cropped.jpg" alt="Setting" width="1500" height="660">
-    <ul>
+    <img src="Images/image_fip_08_cropped_large.jpg" alt="Setting" width="1500" height="660">
+
+    <section class="shopingboxes">
         <div class="shopused">
             <a href="url">Shop Used</a>
         </div>
-        <div class="shopnew">
+        <div class="shopused">
             <a href="url">Shop New</a>
         </div>
-    </ul>
-    <img src="Images/image_fip_11_cropped.jpg" alt="Record black and white" width="1500" height="660">
-    <h2>Join The Community</h2>
-    <div class="communeimages">
-        <a href="url"><img src="Images/image_concert_cropped.jpg" alt="Concerts" width="500" height="500"></a>
-        <a href="url"><img src="Images/image_headphones_cropped.jpg" alt="Meet Ups" width="500" height="500"></a>
-    </div>
+    </section>
+
+    <img src="Images/image_fip_11_cropped_large.jpg" alt="Record black and white" width="1500" height="660">
+    <section class="joining">
+        <h2>Join The Community</h2>
+        <div class="communeimages">
+            <a href="url"><img src="Images/image_concert_cropped_medium.jpg" alt="Concerts" width="500"
+                    height="500"></a>
+            <a href="url"><img src="Images/image_headphones_cropped_medium.jpg" alt="Meet Ups" width="500"
+                    height="500"></a>
+        </div>
+    </section>
 
     <div class="concerts">
         <h3>Concerts</h3>
